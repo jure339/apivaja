@@ -13,15 +13,25 @@ export default function MatchesPage() {
             Superliga match calendar
           </h1>
         </div>
-        <Link
-          href="/"
-          className="inline-flex items-center justify-center rounded-full border border-cyan-200 bg-white px-5 py-3 text-sm font-semibold text-cyan-900 transition hover:bg-cyan-50"
-        >
-          Back To Landing Page
-        </Link>
+        <div className="flex flex-wrap gap-3">
+          <Link
+            href="/moje-tekme"
+            className="inline-flex items-center justify-center rounded-full border border-cyan-200 bg-white px-5 py-3 text-sm font-semibold text-cyan-900 transition hover:bg-cyan-50"
+          >
+            Urejaj moje tekme
+          </Link>
+          <Link
+            href="/"
+            className="inline-flex items-center justify-center rounded-full border border-cyan-200 bg-white px-5 py-3 text-sm font-semibold text-cyan-900 transition hover:bg-cyan-50"
+          >
+            Back To Landing Page
+          </Link>
+        </div>
       </div>
 
       <ApiDemo />
     </main>
   );
 }
+
+
